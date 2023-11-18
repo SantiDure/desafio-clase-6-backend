@@ -5,4 +5,4 @@ import { cartRouter } from "./cart.router.js";
 export const apiRouter = Router();
 
 apiRouter.use("/products", productRouter);
-apiRouter.use("/cart", cartRouter);
+apiRouter.use("/carts", cartRouter);
