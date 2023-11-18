@@ -1,14 +1,10 @@
 [
   {
-    "id": "ae5a1d17-515e-4bd4-aba0-84e7c69b67fc",
+    "id": "8e422aa0-22a0-4260-a0b5-5935667bf925",
     "products": [
-      "5fb05d00-a67d-40bf-8f9c-ee955729eecd",
-      "5fb05d00-a67d-40bf-8f9c-ee955729eecd",
-      "0392431c-0d7a-4cdb-8854-ea81109c0550",
-      "0392431c-0d7a-4cdb-8854-ea81109c0550",
       {
         "id": "0392431c-0d7a-4cdb-8854-ea81109c0550",
-        "quantity": 1
+        "quantity": 4
       }
     ]
   }

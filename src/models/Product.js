@@ -5,7 +5,7 @@ export class Product {
     description,
     code,
     price,
-    status,
+    status = true,
     stock,
     category,
     thumbnail,
@@ -14,11 +14,11 @@ export class Product {
     this.title = notNull(title);
     this.description = notNull(description);
     this.code = notNull(code);
-    this.price = notNull(price);
-    this.status = notNull(status);
-    this.stock = notNull(stock);
+    this.price = notNull(Number(price));
+    this.status = notNull(Boolean(status));
+    this.stock = notNull(Number(stock));
     this.category = notNull(category);
-    this.thumbnail = notNull(thumbnail);
+    this.thumbnail = notNull([thumbnail]);
   }
 }
 

@@ -40,6 +40,31 @@ class CartManager {
     }
     throw new Error(`El cart con id ${id} no se encuentra o no existe`);
   }
+
+  async addProductToCart(cid, pid) {
+    const initialQuantity = 1;
+    const cart = await this.getCartById(cid);
+    const product = await productManager.getProductById(pid);
+    const productIndexFind = cart.products.findIndex(
+      (p) => p.id === product.id
+    );
+    if (productIndexFind === -1) {
+      cart.products.push({ id: product.id, quantity: initialQuantity });
+      await fs.writeFile(
+        cartManager.path,
+        JSON.stringify([cart], null, 2),
+        "utf8"
+      );
+      return;
+    }
+    cart.products[productIndexFind].quantity++;
+    await fs.writeFile(
+      cartManager.path,
+      JSON.stringify([cart], null, 2),
+      "utf8"
+    );
+    return;
+  }
 }
 
 export const cartManager = new CartManager("./db/carts.json");
