@@ -1,24 +1,15 @@
 [
   {
-    "id": "5fb05d00-a67d-40bf-8f9c-ee955729eecd",
-    "title": "pruebass",
-    "description": "prueba",
-    "code": 123,
-    "price": 123,
-    "status": "gerrgquo",
-    "stock": 121212123,
-    "category": "ropa de gala",
-    "thumbnail": "urlimagen"
-  },
-  {
-    "id": "0392431c-0d7a-4cdb-8854-ea81109c0550",
-    "title": "prueba2",
-    "description": "prueba2",
-    "code": 123456,
-    "price": 123456,
-    "status": "BOOOCA",
-    "stock": 121,
-    "category": "ropa deportiva",
-    "thumbnail": "SIN IMG"
+    "id": "40caa228-679b-4eac-889a-ff51fbeac9a4",
+    "title": "Camiseta de futbol",
+    "description": "Camiseta del ultimo equipo campeon",
+    "code": "53fgyr",
+    "price": 56,
+    "status": true,
+    "stock": 30,
+    "category": "Ropa deportiva PREMIUM",
+    "thumbnail": [
+      "camisetaimagen.com"
+    ]
   }
 ]

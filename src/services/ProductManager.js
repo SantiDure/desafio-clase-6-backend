@@ -87,7 +87,7 @@ class ProductManager {
     if (productIndex !== -1) {
       products.splice(productIndex, 1);
       await fs.writeFile(this.path, JSON.stringify(products, null, 2), "utf8");
-      return products;
+      return;
     }
     throw new Error(`El producto con id ${id} no se encuentra o no existe`);
   }
